@@ -266,14 +266,3 @@
    margin: 0;
     }
 }
-@media only screen 
-and (min-width : 520px) {
-  .nav__list{   
-    width: 100%;
-    flex-direction: column;
-} 
-  .nav__item{
-    width: 100%;
-    margin: 10px 0;
-  }
-}
