@@ -161,7 +161,7 @@
 }
 .nav__item{
   background-image: url(../img/top.png);
-  margin: 0 10px 10px 0px;
+  margin: 0 5px 10px 5px;
   height: 237px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,17 +178,15 @@
 }
 .nav__item--market{
   background-image: url(../img/market.png);
-  margin-right: 0%;
 }
 .nav__item--worktop{
   background-image: url(../img/work.png);
 }
-.nav__item--lable{
+.nav__item--lab{
   background-image: url(../img/label.png);
 }
 .nav__item--city{
   background-image: url(../img/city.png);
-  margin-right: 0;
 }
 .nav__title{
   position: absolute; 
