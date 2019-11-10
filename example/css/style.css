@@ -234,6 +234,11 @@
   margin: 0 auto 0 35px;
   font-size: 14px;
 }
+@media screen and (max-width:1200px){
+body{
+  width: 100%;
+}
+}
 
 @media screen and (max-width:786px){
   .nav__el{
