@@ -85,6 +85,8 @@
   padding-bottom: 110px;
   box-sizing: border-box;
   background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fieldset--services{
   margin: 0 auto;  
@@ -143,31 +145,52 @@
   max-width: 535px;
   font-size: 14px;  
 }
-.nav{
-  margin: 0;
-  padding: 0;
-}
-.nav__element{
-  margin: 5px;
-  text-decoration: none;
-  position: relative;
-  cursor: pointer;  
-}
-.nav__element:hover{
-  transform: scale(1.1);
-  z-index: 1;
-  color: aquamarine;
-  transition-duration: 0.3s;
-}
-.nav__element-first{
-  width: 100%;
-  display: flex;  
-}
-.nav__element-second{
+.nav__el{
   display: flex;
   width: 100%;
+  justify-content: space-between;  
 }
-.nav__element-link{
+
+.nav__list{
+  width: 50%;
+  padding: 0;
+  list-style: none;
+}
+.nav__list--fix{
+  width: 75%;  
+}
+.nav__item{
+  background-image: url(../img/top.png);
+  margin: 0 10px 10px 0px;
+  height: 237px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.nav__item:hover{
+  transform: scale(1.05);
+  z-index: 1;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.nav__item--new{
+  background-image: url(../img/joint.png);
+}
+.nav__item--market{
+  background-image: url(../img/market.png);
+  margin-right: 0%;
+}
+.nav__item--worktop{
+  background-image: url(../img/work.png);
+}
+.nav__item--lable{
+  background-image: url(../img/label.png);
+}
+.nav__item--city{
+  background-image: url(../img/city.png);
+  margin-right: 0;
+}
+.nav__title{
   position: absolute; 
   font-size: 34px;
   text-transform: uppercase;
@@ -175,39 +198,6 @@
   left: 48px;
   word-break: break-word;
   bottom: 45px; 
-}
-.nav__element--item-1{ background-image: url(../img/top.png);
-  width: 550px;
-  height: 237px;
-  margin-left: 0;
-}
-.nav__element--item-2{
-  background-image: url(../img/joint.png);
-  width: 800px;
-  height: 237px;   
-}
-.nav__element--item-3{
-  background-image: url(../img/market.png);
-  width: 550px;
-  height: 237px;
-  margin-right: 0;
-}
-.nav__element--item-4{
-  background-image: url(../img/work.png);
-  width: 550px;
-  height: 237px;
-  margin-left: 0;
-}
-.nav__element--item-5{
-  background-image: url(../img/label.png);
-  width: 800px;
-  height: 237px; 
-}
-.nav__element--item-6{
-  background-image: url(../img/city.png);
-  width: 550px;
-  height: 237px;
-  margin-right: 0;
 }
 .fieldset--contact{
   margin: 130px auto 0 auto;
@@ -245,4 +235,36 @@
   color: #3c3c3c;
   margin: 0 auto 0 35px;
   font-size: 14px;
+}
+
+@media screen and (max-width:786px){
+  .nav__el{
+    flex-direction: column;
+    margin: 0;
+  }
+  .nav__list{
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  .nav__item{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width:520px){
+  .nav__list{   
+    width: 100%;
+    flex-direction: column;
+} 
+  .nav__item{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width:480px){ 
+  body{
+    width:480px;
+   margin: 0;
+    }
 }

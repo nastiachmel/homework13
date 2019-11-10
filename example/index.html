@@ -12,8 +12,9 @@
 </head>
 
 <body>
-  <div class="mainer">
-    <header class="header">
+
+  <header class="header">
+    <div class="mainer">
       <div class="header__logo">
         <img class="" src="./img/logo.png" alt="">
       </div>
@@ -28,28 +29,30 @@
         We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development,
         design and product management.
       </div>
-    </header>
+    </div>
+  </header>
 
-    <fieldset class="fieldset">
-      <legend class="fieldset__title">
-        <a href="" class="fieldset__title-link">ABOUT US</a>
-      </legend>
-      <div class="fieldset__text">
-        When you work with us, you are part of a team of committed collaborators. <br>
-        All aspects of our software development process are integrated, iterative and agile.
-      </div>
-      <br>
-      <div class="fieldset__text fieldset__text--modified">
-        Our approach unifies design, development and
-        product management to create exceptional products. <br>
-      </div>
-      <div class="fieldset__text fieldset__text--modified-new">
-        We start each project by understanding your business goals,
-        the user’s needs and the product requirements. <br>
-        Then we help translate them into effective and elegant solutions.</div>
-    </fieldset>
+  <fieldset class="fieldset">
+    <legend class="fieldset__title">
+      <a href="" class="fieldset__title-link">ABOUT US</a>
+    </legend>
+    <div class="fieldset__text">
+      When you work with us, you are part of a team of committed collaborators. <br>
+      All aspects of our software development process are integrated, iterative and agile.
+    </div>
+    <br>
+    <div class="fieldset__text fieldset__text--modified">
+      Our approach unifies design, development and
+      product management to create exceptional products. <br>
+    </div>
+    <div class="fieldset__text fieldset__text--modified-new">
+      We start each project by understanding your business goals,
+      the user’s needs and the product requirements. <br>
+      Then we help translate them into effective and elegant solutions.</div>
+  </fieldset>
 
-    <div class="services">
+  <div class="services">
+    <div class="mainer">
       <fieldset class="fieldset fieldset--services">
         <legend class="fieldset__title fieldset__title--services">
           <a href="" class="fieldset__title-link fieldset__title-link--fix">SERVICES</a>
@@ -63,7 +66,8 @@
           <br> Based on your requirements, we can provide a complete offering or just the pieces you need.</div>
       </fieldset>
     </div>
-
+  </div>
+  <div class="mainer">
     <fieldset class="fieldset fieldset--change">
       <legend class="fieldset__title fieldset__title--change">
         <a href="#" class="fieldset__title-link">what we do</a>
@@ -101,18 +105,33 @@
         always ready to go live. This iterative process allows for changes as business requirements evolve.
       </div>
     </fieldset>
+  </div>
 
-    <nav class="nav">
-      <div class="nav__element-first">
-        <a class="nav__element nav__element--item-1" href="#"><span class="nav__element-link">topworkz  </span></a>
-        <a class="nav__element nav__element--item-2" href="#"><span class="nav__element-link">joint</span></a>
-        <a class="nav__element nav__element--item-3" href="#"><span class="nav__element-link">market</span></a></div>
-      <div class="nav__element-second">
-        <a class="nav__element nav__element--item-4" href="#"><span class="nav__element-link">worktop</span></a>
-        <a class="nav__element nav__element--item-5" href="#"><span class="nav__element-link">lable</span></a>
-        <a class="nav__element nav__element--item-6" href="#"><span class="nav__element-link">Kyiv</span></a></div>
-    </nav>
-
+  <nav class="nav">
+    <div class="nav__el">
+      <ul class="nav__list">
+        <li class="nav__item"> <a class="nav__link" href=""> <span class="nav__title">topworkz </span> </a> </li>
+        <li class="nav__item nav__item--worktop"> <a class="nav__link" href=""> <span class="nav__title">worktop</span>
+        </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--fix">
+          <li class="nav__item nav__item--new"> <a class="nav__link" href=""> <span class="nav__title">joint</span>
+          </a> </li>
+          <li class="nav__item nav__item--lable"> <a class="nav__link" href=""> <span class="nav__title">lable</span> </a>
+          </li>
+      
+        
+      </ul>
+      <ul class="nav__list">
+          <li class="nav__item nav__item--market"> <a class="nav__link" href=""> <span class="nav__title">market</span>
+          </a> </li>
+        <li class="nav__item nav__item--city"> <a class="nav__link" href=""> <span class="nav__title">Kyiv</span> </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="mainer">
     <fieldset class="fieldset fieldset--contact">
       <legend class="fieldset__title fieldset__title--contact">
         <a href="" class="fieldset__title-link">CONTACT us</a>
@@ -124,11 +143,12 @@
       </div>
       <button class="button">CONTACT us</button>
     </fieldset>
-    <footer class="foot">
-      <a href="" class="foot__logo-link"> <img src="./img/logo-foot.png" alt=""> </a>
-      <div class="foot__text"> © 2014. All Rights Reserved Ellipsis.com</div>
-    </footer>
   </div>
+  <footer class="foot">
+    <a href="" class="foot__logo-link"> <img src="./img/logo-foot.png" alt=""> </a>
+    <div class="foot__text"> © 2014. All Rights Reserved Ellipsis.com</div>
+  </footer>
+
 </body>
 
 </html>
