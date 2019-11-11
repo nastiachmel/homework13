@@ -238,7 +238,7 @@
 
 @media screen and (max-width:786px){
   body{
-    width: 786px;
+    max-width: 786px;
   }
   .nav__el{
     flex-direction: column;
@@ -256,7 +256,7 @@
 }
 @media screen and (max-width:520px){
 body{
-  width: 520px;
+  max-width: 520px;
 }
   .nav__list{   
     width: 100%;
