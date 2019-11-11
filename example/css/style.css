@@ -272,8 +272,8 @@ body{
   width:480px;
   margin: 0;
     }
-    .nav__item:hover{
+    /* .nav__item:hover{
       transform: none;
-         }
+         } */
          
 }
